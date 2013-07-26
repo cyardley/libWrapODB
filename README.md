@@ -17,9 +17,11 @@ Currently any changes to the datbase are saved into "out.odb". Copy this file to
 See TestWrapper.java for an example. If you want to run the test wrapper, update the path and database query in the file.
 
 PUBLIC INTERFACE
+==========
 
-//WrapODB.java
-//wrapodb.WrapODB;
+WrapODB.java
+----------
+wrapodb.WrapODB;
 
 public WrapODB(String p, String n, String s)
 
@@ -35,12 +37,13 @@ public boolean UnwrapDB()
 
 	Extracts the database from the ODB file
 
-public boolean WrapDB(){
+public boolean WrapDB()
+
 	Updates the database to the ODB file
 
-//WrapDatabase.java
-
-//wrapodb.WrapDatabase;
+WrapDatabase.java
+----------
+wrapodb.WrapDatabase;
 
 public WrapDatabase(String p)
 

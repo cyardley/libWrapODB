@@ -1,6 +1,7 @@
 libWrapODB
 ==========
 (version ALPHA - not tested)
+
 Casey Yardley
 
 Java library to query the HSQLDB database in an Open Document Base (odb) file.
@@ -19,29 +20,42 @@ PUBLIC INTERFACE
 
 //WrapODB.java
 //wrapodb.WrapODB;
+
 public WrapODB(String p, String n, String s)
+
 	Creates a new WrapODB object.
+	
 	String p is the path to the working directory
+	
 	String n is the odb name (e.g. "myFile.odb")
+	
 	String s is the working directory for the hsqldb files (e.g. "hsqldb")
 
 public boolean UnwrapDB()
+
 	Extracts the database from the ODB file
 
 public boolean WrapDB(){
 	Updates the database to the ODB file
 
 //WrapDatabase.java
+
 //wrapodb.WrapDatabase;
-public WrapDatabase(String p){
+
+public WrapDatabase(String p)
+
 	Creates a new WrapDatabase object.
+	
 	String p is teh path to the database
 
-public boolean OpenDB(){
+public boolean OpenDB()
+
 	Opens the database in the working directory
 
-public void CloseDB(){
+public void CloseDB()
+
 	Closes the database in the working directory.
 
-public ResultSet QueryDB(String sql){
+public ResultSet QueryDB(String sql)
+
 	Executes the SQL query "String sql" and returns the results as a java.sql.ResultSet
